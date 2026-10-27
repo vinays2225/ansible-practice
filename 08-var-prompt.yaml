@@ -1,0 +1,14 @@
+- name: Playbook prompt username and password
+  hosts:  local
+  connection: local
+  vars_prompt:  
+  - name: username
+    prompt: Please enter username
+    private:  false
+  - name: password
+    prompt: Please enter password
+    private: true
+  tasks:
+  - name: display username and password
+    debug:  
+      msg:  "Hi {{username}}, you enterd password is {{password}}"
