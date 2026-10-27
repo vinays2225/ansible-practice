@@ -3,10 +3,10 @@
   connection: local
   vars:
     course: Ansible from playbook vars
-  vars_prompt:  
-  - name: course
-    prompt: please enter course
-    private: false
+  # vars_prompt:  
+  # - name: course
+  #   prompt: please enter course
+  #   private: false
   # vars_files:
   # - course.yaml  
   tasks:
@@ -18,4 +18,5 @@
 
   #1. CMD
   #2. task 
-  #3.         
+  #3.  files
+  #4. CMD       
