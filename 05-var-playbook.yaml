@@ -8,5 +8,4 @@
   tasks:
   - name: print the vars
     debug:
-      msg:  "Hi {{trainer}} teaching {{trainer}} duration {{duration}}."
-       
+      msg:  "Hi {{trainer}} teaching {{course}} duration {{duration}}."
