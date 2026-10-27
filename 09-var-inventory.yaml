@@ -1,0 +1,6 @@
+- name: Playbook with reading variables from inventory
+  hosts: froentend
+  tasks:  
+  - name: Task from display data from inventory file
+    debug:
+      msg: "Hi {{trainer}}, leasring course {{course}} duration is {{duration}}"
