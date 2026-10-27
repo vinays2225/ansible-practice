@@ -1,8 +1,8 @@
 - name: Variable Prefrence
   hosts:  local
   connection: local
-  vars:
-    course: Ansible from playbook vars
+  # vars:
+  #   course: Ansible from playbook vars
   # vars_prompt:  
   # - name: course
   #   prompt: please enter course
@@ -19,4 +19,6 @@
   #1. CMD
   #2. task 
   #3.  files
-  #4. CMD       
+  #4. CMD 
+  #5. playbook vars
+  #6.
