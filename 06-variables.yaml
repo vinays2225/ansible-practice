@@ -1,0 +1,11 @@
+- name: Playbook valiable task level declaration
+  hosts:  local
+  connection: local
+  vars:
+    course: "Ansible from playbook level"
+  tasks:  
+  - name: "TaskLevel "
+    vars: 
+      course: "Ansible from task"
+    debug:
+      msg:  "Learnig course from {{ course }}"    
