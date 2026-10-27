@@ -1,10 +1,7 @@
-- name: Debugg demo
+- name: demo on debug
   hosts: local
   connection: local
   tasks:
-    - name: Debugg Demo task12
-      debug:
-        msg: Hello task-1 playbook 1
-    - name: Debugg Demo task 2
-      debug:
-        msg: Hello task-2 playbook 1    
+  - name: print hello world
+    ansible.builtin.debug:
+      msg: "Hello Ansible..!"

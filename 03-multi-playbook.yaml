@@ -1,0 +1,20 @@
+- name: Playbook 1
+  hosts: local
+  connection: local
+  tasks:
+    - name: Playbook-1 task-1
+      debug:
+        msg: Hello task-1 playbook-1
+    - name: Playbook-1 task-2
+      debug:
+        msg: Hello task-2 playbook-1
+- name: Playbokk 2
+  hosts: local
+  connection: local
+  tasks:
+    - name: Playbook-2 task-1
+      debug:
+        msg: Hello task-1 playbook-2
+    - name: playbook-2 task 2
+      debug:
+        msg: Hello task-2 playbook-2       
