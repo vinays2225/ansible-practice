@@ -1,0 +1,7 @@
+- name:  set values from CMD
+  hosts:  local
+  connection: local
+  tasks:  
+  - name: Get the value from CMD
+    debug:
+      msg:  "Hello {{person_name}}, How are you."
