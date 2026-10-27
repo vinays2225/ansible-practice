@@ -11,7 +11,11 @@
   - course.yaml  
   tasks:
   - name: Variables from Task
-    vars: 
-      course: Ansible from task
+    # vars: 
+    #   course: Ansible from task
     debug:
-      msg: "Course from {{ course }}"      
+      msg: "Course from {{ course }}"
+
+  #1. CMD
+  #2. task 
+  #3.         
