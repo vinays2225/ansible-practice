@@ -1,0 +1,12 @@
+- name: Playbook variable declaration demo
+  hosts: local
+  connection: local
+  vars:
+    course: "DevOps Ansible"
+    trainer: "Sivakumar M"
+    duration: "10 hrs" 
+  tasks:
+  - name: print the vars
+    debug:
+      msg:  "Hi {{trainer}} teaching {{trainer}} duration {{duration}}."
+       
