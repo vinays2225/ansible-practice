@@ -1,5 +1,5 @@
 - name: Playbook with reading variables from inventory
-  hosts: froentend
+  hosts: frontend
   tasks:  
   - name: Task from display data from inventory file
     debug:
