@@ -1,0 +1,16 @@
+<student>
+    <first-name>SIVA</first-name>
+    <last-name>M</last-name>
+    <addresses>
+        <address type='P'>
+            <H-NO>220-22</H-NO>
+            <STREET>SNR</STREET>
+            <CITY>HYD</CITY>
+        </address>
+        <address type='T'>
+            <H-NO>220-22</H-NO>
+            <STREET>BKPU</STREET>
+            <CITY>HYD</CITY>
+        </address>
+    </address>
+</student>
