@@ -1,0 +1,9 @@
+- name: playook 1 from file
+  hosts:  local 
+  connection: local
+  var_files:
+  - course.yaml
+  tasks:
+  - name: Task 1 from file
+    debug:
+      msg:  "Hi {{trainer}},{{course}} duration {{duration}}" 
