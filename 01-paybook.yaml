@@ -1,6 +1,6 @@
 - name: Ping demo
-  hosts: localhost # target ansible server itself
-  connection: localhost # it will not expect credentials
+  hosts: local # target ansible server itself
+  connection: local # it will not expect credentials
   tasks: # task == modeule == collections
   - name: Ping localhost
     ping:
