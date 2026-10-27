@@ -1,0 +1,17 @@
+- name: Variable Prefrence
+  hosts:  local
+  connection: local
+  vars:
+    course: Ansible from playbook vars
+  vars_prompt:  
+  - name: course
+    prompt: please enter course
+    private: false
+  vars_files:
+  - course.yaml  
+  tasks:
+  - name: Variables from Task
+    vars: 
+      course: Ansible from task
+    debug:
+      msg: "Course from {{ course }}"      
