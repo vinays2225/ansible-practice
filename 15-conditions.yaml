@@ -6,10 +6,10 @@
     dnf:
       name: nginx
       state: prasent
-    when: ansible_fatcs.os_family == "Redhat"  
+    when: (ansible_fatcs.os_family == "RedHat" ) 
 
   - name: install ngnix in ubuntu
     apt:
       name: nginx
       state: prasent
-    when: ansible_fatcs.os_family == "Debian"     
+    when: (ansible_fatcs.os_family == "Debian")   
