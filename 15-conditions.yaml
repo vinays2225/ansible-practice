@@ -1,6 +1,6 @@
 - name: Install Software
-  host: local
-  conection: local
+  hosts: local
+  connection: local
   tasks:
   - name: install nginx
     dnf:
