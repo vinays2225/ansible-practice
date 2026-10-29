@@ -7,9 +7,9 @@
   - name:  is even 
     debug:
       msg: "given number {{given_number}} is even"
-    when: given_number % 2 == 0
+    when: (given_number | int) % 2 == 0
 
   - name: is odd
     debug:
       msg: "given number {{given_number}} is odd" 
-    when: given_number % 2 != 0    
+    when: (given_number | int) % 2 != 0    
