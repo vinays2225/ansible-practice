@@ -1,8 +1,8 @@
 - name: data types demo
   hosts: local
   connection: local
-  Vars:
-    name: Siva
+  vars:
+    name: "Siva"
     age: 30
     is_prasent: true
     price: 300.2
