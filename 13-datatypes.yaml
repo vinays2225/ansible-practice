@@ -12,17 +12,17 @@
     - ansible
     - shell
     cloud_skills:
-    cloud: aws
-    languages: java
-    scripting: shell JS react
+      cloud: aws
+      languages: java
+      scripting: shell JS react
 
   tasks:
   - name: print data
     debug:
       msg: |
-        name: "{{ name }}"
-        age: "{{age}}"
-        isPrasent: "{{is_prasent}}"
-        price: "{{price}}"
-        Skills: "{{skills}}"
-        Map: "{{cloud_skills}}"
+        name: "{{ name | type_debug}}"
+        age: "{{age | type_debug }}"
+        isPrasent: "{{is_prasent | type_debug}}"
+        price: "{{price | type_debug}}"
+        Skills: "{{skills | type_debug}}"
+        Map: "{{cloud_skills | type_debug}}"
