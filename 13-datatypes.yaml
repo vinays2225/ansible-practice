@@ -19,9 +19,9 @@
   - name: print data
     debug:
       msg: |
-        name: "{{ name1 | type_debug}}"
-        age: "{{age | type_debug }}"
-        isPrasent: "{{is_prasent | type_debug}}"
-        price: "{{price | type_debug}}"
-        Skills: "{{skills | type_debug}}"
-        more_details: "{{ more_details | type_debug}}"
+        name: {{name1}} {{ name1 | type_debug}}
+        age: {{age}} {{age | type_debug }}
+        isPrasent: {{is_prasent}} {{is_prasent | type_debug}}
+        price: {{price}} {{price | type_debug}}
+        Skills: {{skills}} {{skills | type_debug}}
+        more details: {{ more_details }} : {{ more_details | type_debug }} 
