@@ -1,0 +1,7 @@
+- name: Fact checkinng
+  hosts: local
+  connection: local
+  tasks:
+  - name: Facts
+    debug:
+      msg: {{ansible_fatcs}}
