@@ -1,0 +1,15 @@
+- name: Install Software
+  host: local
+  conection: local
+  tasks:
+  - name: install nginx
+    dnf:
+      name: nginx
+      state: prasent
+    when: ansible_fatcs.os_family == "Redhat"  
+
+  - name: install ngnix in ubuntu
+    apt:
+      name: nginx
+      state: prasent
+    when: ansible_fatcs.os_family == "Debian"     
