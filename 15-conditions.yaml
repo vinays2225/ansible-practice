@@ -1,6 +1,7 @@
 - name: Install Software
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: install nginx
     dnf:
