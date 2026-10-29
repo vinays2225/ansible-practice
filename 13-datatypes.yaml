@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    name: "Siva"
+    name1: "Siva"
     age: 30
     is_prasent: true
     price: 300.2
@@ -20,9 +20,9 @@
   - name: print data
     debug:
       msg: |
-        name: "{{ name | type_debug}}"
+        name: "{{ name1 | type_debug}}"
         age: "{{age | type_debug }}"
         isPrasent: "{{is_prasent | type_debug}}"
         price: "{{price | type_debug}}"
         Skills: "{{skills | type_debug}}"
-        Map: "{{cloud_skills | type_debug}}"
+        cloud_skills: "{{ cloud_skills | type_debug}}"
