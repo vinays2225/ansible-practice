@@ -11,10 +11,9 @@
     - aws
     - ansible
     - shell
-    cloud_skills:
-      cloud: aws
-      languages: java
-      scripting: shell JS react
+    more_details: # dictionary/map
+      trainer: sivakumar
+      months: 4
 
   tasks:
   - name: print data
@@ -25,4 +24,4 @@
         isPrasent: "{{is_prasent | type_debug}}"
         price: "{{price | type_debug}}"
         Skills: "{{skills | type_debug}}"
-        cloud_skills: "{{ cloud_skills | type_debug}}"
+        more_details: "{{ more_details | type_debug}}"
