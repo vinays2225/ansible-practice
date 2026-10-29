@@ -5,11 +5,11 @@
   - name: install nginx
     dnf:
       name: nginx
-      state: prasent
+      state: present
     when: (ansible_facts.os_family == "RedHat" ) 
 
   - name: install ngnix in ubuntu
     apt:
       name: nginx
-      state: prasent
+      state: present
     when: (ansible_facts.os_family == "Debian")   
