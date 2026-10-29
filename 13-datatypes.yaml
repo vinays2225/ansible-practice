@@ -1,0 +1,28 @@
+- name: data types demo
+  hosts: local
+  connection: local
+  Vars:
+    name: Siva
+    age: 30
+    is_prasent: true
+    price: 300.2
+    skills:
+    - java
+    - aws
+    - ansible
+    - shell
+    cloud_skills:
+    cloud: aws
+    languages: java
+    scripting: shell JS react
+
+  tasks:
+  - name: print data
+    debug:
+      msg: |
+        name: "{{ name }}"
+        age: "{{age}}"
+        isPrasent: "{{is_prasent}}"
+        price: "{{price}}"
+        Skills: "{{skills}}"
+        Map: "{{cloud_skills}}"
