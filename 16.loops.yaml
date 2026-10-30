@@ -1,0 +1,38 @@
+- name: Packege installing list
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    packages: 
+    - nginx
+    - mysql
+    - redis
+    - rabbitmq
+  tasks:
+  - name: list of names
+    debug:
+      msg: {{item}}
+    loop: "{{ packages }}"
+
+  - name: loop items
+    debug:
+      msg: {{item}}
+    loop: 
+    - nginx
+    - mysql
+    - redis
+    - rabbitmq
+
+  - name: install package
+    vars:
+      packages:
+      - {name: 'nginix', state: 'prasent'}
+      - {name: 'mysql', state: 'prasent'}
+      - {name: 'redis', state: 'prasent'}
+      - {name: 'rabbitmq', state: 'prasent'}
+    tasks:
+      package:
+        name: {{ item.name }}
+        state: {{ item.state }}
+      loop: {{packages}}
+
