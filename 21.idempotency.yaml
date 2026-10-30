@@ -1,0 +1,7 @@
+- name: Check idempotency in ansible
+  hosts: local
+  connection: local
+  tasks:
+  - name: create user
+    user:
+      name: roboshop # == to adduser roboshop

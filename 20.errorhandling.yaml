@@ -1,0 +1,16 @@
+- name: Error handling
+  hosts: local
+  connection: local
+  tasks:
+  - name: check user
+    command: id roboshop
+    register: output_info
+    ignore_errors: true
+
+  - name: display output
+    debug:
+      msg: "{{ output_info }}"
+
+  - name: create user
+    command: useradd roboshop
+    when:   output_info.rc != 0     

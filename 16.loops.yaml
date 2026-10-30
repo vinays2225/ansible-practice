@@ -27,12 +27,12 @@
     vars:
       packages:
       - {name: 'nginix', state: 'prasent'}
-      - {name: 'mysql', state: 'prasent'}
+      - {name: 'mysql', state: 'absent'}
       - {name: 'redis', state: 'prasent'}
       - {name: 'rabbitmq', state: 'prasent'}
     tasks:
       package:
-        name: {{ item.name }}
-        state: {{ item.state }}
-      loop: {{packages}}
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+      loop: "{{packages}}"
 

@@ -1,0 +1,35 @@
+- name: filter the given values
+  hosts: local
+  connection: local
+  vars:
+    topics: linux,shellscript,ansible,teraform
+    names:
+    - "vinay"
+    - "reddy"
+    - "S"
+    topic: ansible
+    days: "30"
+    cloud: "AWS"
+  tasks:
+  - name: convert to list
+    debug:
+      msg: "Topics are: {{ topics | split(',') }}"
+  - name: set default value
+    debug:
+      msg: "Per name : {{ person_name | default('Ramesh') }}"  
+
+  - name: Display full name
+    debug:
+      msg: "Hi, {{ names | join( ' ') }}"
+  - name: uppercase
+    debug:
+      msg: "Topic is uppercase : {{topic | upper}}"
+
+  - name: lower case
+    debug:
+      msg: "Topic is uppercase : {{cloud | lower}}" 
+
+  - name: convert string to int
+    debug:
+      msg: "Days are : {{ days | int }}"       
+
